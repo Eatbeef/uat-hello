@@ -1,0 +1,11 @@
+{
+  "name": "uat-hello",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dummy UAT app for the Ops Floor release path (B5 dry run, G7)",
+  "type": "module",
+  "main": "server.mjs",
+  "engines": {
+    "node": ">=24"
+  }
+}
