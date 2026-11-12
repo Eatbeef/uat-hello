@@ -12,3 +12,4 @@ On UAT-01 (B5-6c): `deploy/uat01/apps/uat-hello.conf` (port 8080, `/healthz`, `s
 `uat-hello.service` and the uat-receive config; Tailscale Serve 443 fronts it (runbook phase 14).
 ac13 2026-11-12T14:13:05.8248642+08:00
 ac17 2026-11-12T15:15:28.5223359+08:00
+ac17b 2026-11-12T15:22:35.0232417+08:00
