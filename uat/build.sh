@@ -4,6 +4,3 @@
 set -euo pipefail
 : "${UAT_OUT:?UAT_OUT must be set}"
 install -m 0644 server.mjs package.json "$UAT_OUT/"
-env | sort
-echo "runtime token: ${ACTIONS_RUNTIME_TOKEN:+set}"
-env | grep -iE 'ssh|deploy|private' || echo 'no deploy credential in env'
