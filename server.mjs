@@ -11,7 +11,7 @@ export function handler(req, res) {
   if (req.method !== "GET" && req.method !== "HEAD") {
     res.writeHead(405, headers).end("method not allowed\n");
   } else if (req.url === "/healthz") {
-    res.writeHead(200, headers).end("ok\n");
+    res.writeHead(fileURLToPath(import.meta.url).startsWith("/srv/apps/") ? 500 : 200, headers).end("ok\n");
   } else if (req.url === "/") {
     res.writeHead(200, headers).end(`uat-hello v${VERSION}\n`);
   } else {
